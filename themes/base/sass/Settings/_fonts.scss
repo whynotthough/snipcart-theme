@@ -4,7 +4,10 @@
     We don't want to load many fonts on your site so we stay classic.
     You can add your custom fonts here and/or define your own fonts family variables.
 */
-$font-base: Arial, sans-serif;
+// $font-base: Arial, sans-serif;
+
+// @import url("https://fonts.googleapis.com/css?family=Raleway:400,600,700" rel="stylesheet");
+$font-base: 'Raleway', Arial, sans-serif;
 
 
 /**
@@ -39,7 +42,8 @@ $fontsize: (
         small: 12px
     ),
     button: (
-        base: 12px
+        // base: 12px
+        base: 16px
     ),
     error: (
         base: 14px
@@ -56,10 +60,12 @@ $fontsize: (
     ),
     header: (
         small: 14px,
-        large: 30px
+        // large: 30px
+        large: 25px
     ),
     product: (
         base: 14px,
+        // large: 20px,
         large: 20px,
         icon: 30px
     ),
