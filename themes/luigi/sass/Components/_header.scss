@@ -20,7 +20,7 @@ $_header-total-height: 38px;
 \*------------------------------------*/
 
 .snip-header {
-    @include font-bold;
+    // @include font-bold;
     background: palette(header, background);
     color: palette(header, color);
     padding: $padding-small;
@@ -99,21 +99,28 @@ $_header-total-height: 38px;
 
 .snip-header__total {
     background: palette(header, background--highlight);
-    border-radius: 5px;
+    // border-radius: 5px;
     display: inline-block;
     padding: .5em;
+
+    border-top: 1px solid palette(header, border--color);
+    border-bottom: 1px solid palette(header, border--color);
 
     @media #{$mq-medium} {
         height: $_header-total-height;
         line-height: $_header-total-height;
         margin-top: 2.188em;
-        padding: 0 .625em;
+        // padding: 0 .625em;
+        
+        padding: 0 1.5em;
     }
 }
 
 .snip-header__total-label {
     color: palette(header, label-color);
     margin-right: .625em;
+
+    display: none;
 }
 
 .snip-header__continue {

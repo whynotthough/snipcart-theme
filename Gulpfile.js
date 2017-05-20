@@ -12,11 +12,13 @@ var browserSync = require('browser-sync');
 var argv = require('yargs').argv
 
 var themesDir = 'themes';
-var workingDir = 'themes/base';
+var workingDir = 'themes/luigi';
+
+var compiledCSSdir = 'themes/luigi/css'; // my dir for compiled CSS
 
 var sources = {
     sass: workingDir + '/sass/snipcart.scss',
-    compiled: workingDir + '/snipcart.css'
+    compiled: compiledCSSdir + '/snipcart.css'
 };
 
 var watch = {
@@ -41,7 +43,7 @@ gulp.task('sass', function() {
     gulp.src(sources.sass)
         .pipe(sass().on('error', sass.logError))
         .pipe(autoprefixer({cascade: false, browsers: ['> 0.25%']}))
-        .pipe(gulp.dest(workingDir));
+        .pipe(gulp.dest(compiledCSSdir));
 });
 
 gulp.task('min', ['sass'], function() {
@@ -49,7 +51,7 @@ gulp.task('min', ['sass'], function() {
         .pipe(postcss([mqpacker]))
         .pipe(minifyCss())
         .pipe(rename({suffix: '.min'}))
-        .pipe(gulp.dest(workingDir));
+        .pipe(gulp.dest(compiledCSSdir));
 });
 
 gulp.task('watch', function() {
@@ -78,3 +80,6 @@ gulp.task('deploy', ['min'], function() {
     gulp.src([themesDir + "/**/*", '!**/*.scss', '!**/sass', '!**/styles.css'])
         .pipe(gulp.dest(getDistDir()))
 });
+
+
+
