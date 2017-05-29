@@ -167,7 +167,7 @@ $_notice-error--text-color: palette(static, color--highlight);
 
 .snip-table__loading {
     text-align: center;
-    font-size: fontsize(table, base);
+    font-size: fontsize(table, large);
     color: palette(table, color--highlight);
     font-weight: bold;
     text-transform: uppercase;
@@ -198,11 +198,11 @@ $_notice-error--text-color: palette(static, color--highlight);
 }
 
 .snip-table__cell--bold {
-    @include font-bold;
+    // @include font-bold;
 }
 
 .snip-table__cell--highlight {
-    @include font-bold;
+    // @include font-bold;
     color: palette(table, color--highlight);
 }
 

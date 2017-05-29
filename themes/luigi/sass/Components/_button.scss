@@ -11,7 +11,7 @@
     LOCAL VARIABLES
 \*------------------------------------*/
 
-$_btn-size: 36px;
+$_btn-size: 44px;
 
 
 /*------------------------------------*\
@@ -20,9 +20,9 @@ $_btn-size: 36px;
 
 // [1]
 .snip-btn {
-    @include font-bold;
+    // @include font-bold;
     background-color: palette(button, background);
-    border-radius: 3px;
+    border-radius: 1px;
     border: 0;
     color: palette(button, color);
     cursor: pointer;
@@ -31,8 +31,8 @@ $_btn-size: 36px;
     height: $_btn-size;
     line-height: $_btn-size;
     outline: 0;
-    padding: 0 1em;
-    text-transform: uppercase;
+    padding: 0 1.7em;
+    // text-transform: uppercase;
 
     &:hover {
         background-color: palette(button, background--hover);
@@ -40,7 +40,7 @@ $_btn-size: 36px;
 
     @media #{$mq-medium} {
         font-size: fontsize(button, base);
-        padding: 0 2em;
+        padding: 0 1.7em;
     }
 }
 

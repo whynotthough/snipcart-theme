@@ -71,7 +71,13 @@ $fontsize: (
     ),
     quantity-trigger: (
         large: 18px,
-        x-large: 22px
+        x-large: 20px
+
+        // font-family: FontAwesome;
+        // // font-size: 14px;
+        // color: #338776;
+        // letter-spacing: 0;
+        // text-shadow: 0 1px 4px rgba(0,0,0,0.11);
     ),
     reset: (
         base: 14px,
@@ -87,7 +93,7 @@ $fontsize: (
     ),
     table: (
         small: 12px,
-        base: 14px,
+        base: 20px,
         large: 20px
     )
 );

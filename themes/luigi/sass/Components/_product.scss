@@ -63,14 +63,15 @@ $_product-disabled-opacity: 0.2;
 }
 
 .snip-product__name {
-    @include font-bold;
+    // @include font-bold;
     color: palette(product, color--highlight);
     font-size: 1.125em;
     overflow: hidden;
     text-transform: uppercase;
 
     @media #{$mq-medium} {
-        font-size: fontsize(product, base);
+        // font-size: fontsize(product, base);
+        font-size: fontsize(product, large);
         margin-top: .5em;
     }
 }

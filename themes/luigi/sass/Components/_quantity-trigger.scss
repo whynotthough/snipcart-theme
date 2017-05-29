@@ -24,9 +24,10 @@ $_qt-text-remove: "-";
 
 // [1]
 .snip-quantity-trigger {
-    @include font-bold;
+    // @include font-bold;
     align-items: center;
-    color: palette(quantity-trigger, color);
+    // color: palette(quantity-trigger, color);
+    color: palette(product, color--highlight);
     display: flex;
     justify-content: center;
     margin: 0 auto;
@@ -35,7 +36,8 @@ $_qt-text-remove: "-";
 .snip-quantity-trigger__text {
     // [2]
     float: left;
-    padding: 0 .313em;
+    // padding: 0 .313em;
+    font-size: fontsize(quantity-trigger, x-large);
 }
 
 .snip-quantity-trigger__btn--duplicate {
@@ -65,17 +67,17 @@ $_qt-text-remove: "-";
 
 .snip-quantity-trigger__btn {
     // [2]
-    background-color: palette(quantity-trigger, background);
-    border-radius: 30px;
-    color: inherit;
+    // background-color: palette(quantity-trigger, background);
+    // border-radius: 30px;
+    color: palette(quantity-trigger, color);
     float: left;
-    font-size: fontsize(quantity-trigger, large);
+    font-size: 25px;
     font-weight: 400;
     height: 1em;
     width: 1em;
 
     &:hover {
-        background-color: palette(quantity-trigger, background--hover);
+        // background-color: palette(quantity-trigger, background--hover);
     }
 
     &:before {
@@ -90,6 +92,8 @@ $_qt-text-remove: "-";
         // [3]
         content: $_qt-text-add;
         line-height: 1em;
+
+        padding-top: .1em;
     }
 }
 
@@ -97,7 +101,8 @@ $_qt-text-remove: "-";
     &:before {
         // [3]
         content: $_qt-text-remove;
-        line-height: 14px;
+        line-height: 1em;
+        // padding-top: .25em;
     }
 }
 

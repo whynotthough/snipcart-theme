@@ -11,8 +11,8 @@
     LOCAL VARIABLES
 \*------------------------------------*/
 
-$_header-height: 105px;
-$_header-total-height: 38px;
+$_header-height: 100px;
+$_header-total-height: 40px;
 
 
 /*------------------------------------*\
@@ -98,21 +98,23 @@ $_header-total-height: 38px;
 }
 
 .snip-header__total {
-    background: palette(header, background--highlight);
+    // background: palette(header, background--highlight);
     // border-radius: 5px;
     display: inline-block;
     padding: .5em;
 
+    font-size: fontsize(header, large);
     border-top: 1px solid palette(header, border--color);
     border-bottom: 1px solid palette(header, border--color);
 
     @media #{$mq-medium} {
         height: $_header-total-height;
         line-height: $_header-total-height;
-        margin-top: 2.188em;
+        // margin-top: 2.188em;
+        margin-top: 1.4em;
         // padding: 0 .625em;
         
-        padding: 0 1.5em;
+        padding: 0 1.2em;
     }
 }
 

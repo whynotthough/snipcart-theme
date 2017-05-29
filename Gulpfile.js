@@ -14,7 +14,8 @@ var argv = require('yargs').argv
 var themesDir = 'themes';
 var workingDir = 'themes/luigi';
 
-var compiledCSSdir = 'themes/luigi/css'; // my dir for compiled CSS
+// var compiledCSSdir = 'themes/luigi/css'; // my dir for compiled CSS
+var compiledCSSdir = '../luigi/assets/css/'; // my dir for compiled CSS
 
 var sources = {
     sass: workingDir + '/sass/snipcart.scss',

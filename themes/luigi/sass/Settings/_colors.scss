@@ -13,9 +13,9 @@ $palettes: (
     ),
     button: (
         background: #EAE8E8,
-        background--highlight: #1B472C,
+        background--highlight: rgba(26,71,44,0.9),
         background--hover: darken(#EAE8E8, 10%),
-        background--highlight-hover: darken(#1B472C, 5%),
+        background--highlight-hover: darken(rgba(26,71,44,0.9), 3%),
         color: rgba(34,34,34,0.5),
         color--highlight: #fff
     ),
@@ -51,7 +51,7 @@ $palettes: (
         color: rgba(34,34,34,0.9),
         label-color: #222222,
 
-        border--color: #1B472C
+        border--color: rgba(26,71,44,0.9)
     ),
     layout: (
         background: #fff,
@@ -76,7 +76,7 @@ $palettes: (
         background: #ccc,
         background--hover: #efe778,
         background--disabled: #eee,
-        color: #1B472C,
+        color: rgba(26,71,44,0.8),
         color--disabled: #bbb
     ),
     static: (
